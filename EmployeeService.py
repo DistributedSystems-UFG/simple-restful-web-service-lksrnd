@@ -3,7 +3,7 @@
 # from this post on DZone: https://dzone.com/articles/restful-web-services-with-python-flask
 #
 
-import Flask
+import flask
 from flask import jsonify
 from flask import request
 from flask import abort
