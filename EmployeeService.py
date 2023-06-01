@@ -16,7 +16,7 @@ empDB=[
  'name':'Saravanan S',
  'title':'Technical Leader'
  'salary':'2000'
- },
+ }
  {
  'id':'201',
  'name':'Rajkumar P',
