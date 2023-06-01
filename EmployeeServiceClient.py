@@ -28,7 +28,7 @@ def serviceTester():
 
     # Test create_employee endpoint
     api_url = api_base_url
-    employee = {"id":"301", "name":"J. Silva", "title":"Senior Programmer","salary":"30000"}
+    employee = {"id":"201", "name":"J. Silva", "title":"Senior Programmer","salary":"30000"}
     response = requests.post(api_url, json=employee)
     print (response.json())
 
