@@ -46,8 +46,15 @@ def updateEmp(empId):
             em[0]['title'] = request.json['title']
 
     return jsonify(em)
+   
+@app.route('/empdb/employee/<empId>/<empSal>',methods=['PUT'])
+def updateEmp(empId, empSal):
 
-
+    em = [ emp for emp in empDB if (emp['id'] == empId) ]
+    em[0]['salary'] = empSal
+    return jsonify(em)
+   
+   
 @app.route('/empdb/employee',methods=['POST'])
 def createEmp():
 
